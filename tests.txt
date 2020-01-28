@@ -1,0 +1,13 @@
+This is a valid sentence.
+Testing?
+This is not a valid sentence
+Testing numbers 1
+Testing1 numbers2
+Testing double  spaces
+Testing invalid char-
+Testing all of the valid characters, is really difficult: sometimes it is not. 
+I actually cannot use the uppercase I in a sentence, this would fail.
+This is an exclamation!
+Semi colon: what does this do?
+testing lowercase
+Testing double Uppercase
