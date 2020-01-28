@@ -7,21 +7,22 @@ terms = [".","?","!"]
 all_possible = [".","?","!", ",",";",":"]
 nums = ["1","2","3","4","5","6","7","8","9","0"]
 len = len(sentence)
-print(len)
+#print(len)
 
 x = 1
 prev = ""
 for elem in sentence:
-    print("Element: ", elem)
-    print("Previous:", prev)
-    print("X: ", x)
+    #print("Element: ", elem)
+    #print("Previous:", prev)
+    #print("X: ", x)
     if x == 1:
         if elem.islower():
             print("Sentence must start with an uppercase letter")
             sys.exit()
     if elem.isupper():
         if x == 1:
-            print("First character is uppercase! Passing first check")
+            #print("First character is uppercase! Passing first check")
+            pass
         else:
             print("Too many uppercases")
             sys.exit()
@@ -30,23 +31,23 @@ for elem in sentence:
         print("No Numbers")
         sys.exit()
     elif elem.isalpha():
-        print("Alpha")
+        #print("Alpha")
+        pass
     elif elem.isspace():
-        print("Space")
+        #print("Space")
+        pass
     elif elem not in all_possible:
         print("Invalid character")
         sys.exit()
     if prev.isspace():
-        if elem.isalpha():
-            print("Passes space check")
-        else:
+        if not elem.isalpha():
             print("No double spaces allowed")
             sys.exit()
     
 
     if x == len:
         if prev.isalpha():
-            print(prev)
+            #print(prev)
             if elem in terms:
                 print("Sentence is valid")
             else:
